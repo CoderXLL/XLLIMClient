@@ -60,15 +60,15 @@
 - (IBAction)loginBtnClick:(id)sender {
     
 //    CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
-    EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountField.text password:self.passwordField.text];
+//    EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountField.text password:self.passwordField.text];
 //    CFAbsoluteTime endTime = CFAbsoluteTimeGetCurrent();
 //    XLLLog(@"%lf秒", endTime - startTime);
-    if (!error) {
+//    if (!error) {
     
         XLLTabBarController *tabBarVC = [[XLLTabBarController alloc] init];
         [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
-        return;
-    }
+//        return;
+//    }
 }
 
 - (IBAction)registerBtnClick:(id)sender {

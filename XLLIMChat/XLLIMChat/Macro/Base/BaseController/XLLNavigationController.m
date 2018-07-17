@@ -21,10 +21,21 @@
 //    [navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     //取消半透明
     navigationBar.translucent = NO;
-    navigationBar.barTintColor = [UIColor redColor];
+    navigationBar.barTintColor = [UIColor whiteColor];
     if ([UINavigationBar instancesRespondToSelector:@selector(setShadowImage:)])
     {
         [navigationBar setShadowImage:[UIImage imageWithColor:[UIColor blackColor]]];
+        
+        CGMutablePathRef path = CGPathCreateMutable();
+        CGPathAddRect(path, NULL, navigationBar.bounds);
+        navigationBar.layer.shadowPath = path;
+        CGPathCloseSubpath(path);
+        CGPathRelease(path);
+        
+        navigationBar.layer.shadowColor = [UIColor blackColor].CGColor;
+        navigationBar.layer.shadowOffset = CGSizeMake(0, 2);
+        navigationBar.layer.shadowRadius = 1;
+        navigationBar.layer.shadowOpacity = 0.9;
     }
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = XLLFont(17.0);
