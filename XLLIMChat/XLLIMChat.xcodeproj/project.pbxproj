@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		196DACA3FF47A40E49E86A1B /* Pods_XLLIMChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2F4C1B1FB488B472A8D7C4 /* Pods_XLLIMChat.framework */; };
+		A90979E32101B80600ACE455 /* XLLLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A90979E22101B80600ACE455 /* XLLLoginManager.m */; };
+		A90979E72101E2EC00ACE455 /* XLLTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90979E62101E2EC00ACE455 /* XLLTabbarView.m */; };
 		A92B8394207463F30003553A /* XLLUserNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B8393207463F30003553A /* XLLUserNavView.m */; };
 		A92B839820746A9D0003553A /* XLLCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B839720746A9D0003553A /* XLLCarouselView.m */; };
 		A92B839B20746B690003553A /* XLLCarouselLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B839A20746B690003553A /* XLLCarouselLayout.m */; };
@@ -140,6 +142,10 @@
 /* Begin PBXFileReference section */
 		11883AA2FA04EB2948563BD6 /* Pods-XLLIMChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLLIMChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLLIMChat/Pods-XLLIMChat.release.xcconfig"; sourceTree = "<group>"; };
 		6C2F4C1B1FB488B472A8D7C4 /* Pods_XLLIMChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLLIMChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90979E12101B80600ACE455 /* XLLLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLLoginManager.h; sourceTree = "<group>"; };
+		A90979E22101B80600ACE455 /* XLLLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLLoginManager.m; sourceTree = "<group>"; };
+		A90979E52101E2EC00ACE455 /* XLLTabbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLTabbarView.h; sourceTree = "<group>"; };
+		A90979E62101E2EC00ACE455 /* XLLTabbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLTabbarView.m; sourceTree = "<group>"; };
 		A92B8392207463F30003553A /* XLLUserNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLUserNavView.h; sourceTree = "<group>"; };
 		A92B8393207463F30003553A /* XLLUserNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLUserNavView.m; sourceTree = "<group>"; };
 		A92B839620746A9D0003553A /* XLLCarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLCarouselView.h; sourceTree = "<group>"; };
@@ -278,6 +284,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A90979E42101E2CC00ACE455 /* XLLTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A90979E52101E2EC00ACE455 /* XLLTabbarView.h */,
+				A90979E62101E2EC00ACE455 /* XLLTabbarView.m */,
+			);
+			path = XLLTabbar;
+			sourceTree = "<group>";
+		};
 		A92B838D207463D20003553A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +364,8 @@
 			children = (
 				A92DD7C72084864E00BD8B79 /* XLLSDKConfig.h */,
 				A92DD7C82084864E00BD8B79 /* XLLSDKConfig.m */,
+				A90979E12101B80600ACE455 /* XLLLoginManager.h */,
+				A90979E22101B80600ACE455 /* XLLLoginManager.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -495,6 +512,7 @@
 		A9AFC808207B48AE0013A876 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				A90979E42101E2CC00ACE455 /* XLLTabbar */,
 				A9AFC809207B48AE0013A876 /* XLLBaseCell.h */,
 				A9AFC80A207B48AE0013A876 /* XLLBaseCell.m */,
 				A9AFC80B207B48AE0013A876 /* XLLBaseView.h */,
@@ -913,6 +931,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AFC7FB207B481E0013A876 /* GlobalConst.m in Sources */,
+				A90979E32101B80600ACE455 /* XLLLoginManager.m in Sources */,
 				A9BB7F21207A17AB00AB250F /* XLLUserImageController.m in Sources */,
 				A92B8394207463F30003553A /* XLLUserNavView.m in Sources */,
 				A9AFC80E207B48AE0013A876 /* XLLBaseTBController.m in Sources */,
@@ -944,6 +963,7 @@
 				A9583BC2207DFF800035516F /* XLLUserVideoModel.m in Sources */,
 				A9BB7F22207A17AB00AB250F /* XLLUserVideoController.m in Sources */,
 				A9AFC810207B48AE0013A876 /* XLLTabBarController.m in Sources */,
+				A90979E72101E2EC00ACE455 /* XLLTabbarView.m in Sources */,
 				A96CD455207383C400B4F762 /* XLLBGVideoView.m in Sources */,
 				A9AFC811207B48AE0013A876 /* XLLBaseCell.m in Sources */,
 			);

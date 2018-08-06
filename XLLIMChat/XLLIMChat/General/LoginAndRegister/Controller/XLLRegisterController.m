@@ -7,6 +7,8 @@
 //
 
 #import "XLLRegisterController.h"
+#import "XLLLoginManager.h"
+#import "XLLTabBarController.h"
 
 @interface XLLRegisterController ()
 
@@ -37,11 +39,11 @@
 
 - (IBAction)registerBtnClick:(id)sender {
     
-    EMError *error = [[EMClient sharedClient] registerWithUsername:self.accountField.text password:self.passwordField.text];
-    if (!error)
-    {
-        //进入tabbar
-    }
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
+    [[XLLLoginManager shareLoginManager] registerWithUserName:self.accountField.text password:self.passwordField.text successBlock:^{
+        
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[XLLTabBarController alloc] init];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

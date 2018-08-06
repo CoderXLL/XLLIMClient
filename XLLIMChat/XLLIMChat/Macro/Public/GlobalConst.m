@@ -20,6 +20,8 @@ NSString *const kNetWorkServiceAddress = @"https://t-xiaolele/api";
 
 /** appKey存储关键字 */
 NSString *const XLLIdentifyAppKey = @"XLLIdentifyAppKey";
+/** 登录任务队列标识 */
+char *const XLLLoginQueue = "XLLLoginQueue";
 
 @implementation GlobalConst
 

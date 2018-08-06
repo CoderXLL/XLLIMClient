@@ -162,11 +162,11 @@ static char XLLFieldConfigKey, XLLTempDelegateKey;
     {
         return NO;
     }
-    //禁止输入标点符号
-    if ([string stringContainsSymbol])
-    {
-        return NO;
-    }
+//    //禁止输入标点符号
+//    if ([string stringContainsSymbol])
+//    {
+//        return NO;
+//    }
     //限制字符输入
     if ([self currentCharCount:textField.text] + [self currentCharCount:string] > self.fieldConfig.maxLimitCount)
     {

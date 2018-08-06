@@ -61,6 +61,7 @@
 #define XLLUserDefaults [NSUserDefaults standardUserDefaults]
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -111,6 +112,11 @@ static inline NSString *_Nullable CheckValue(NSString *_Nullable value) {
  收回键盘
  */
 + (void)hideKeyboard;
+
+/**
+ 公共的提示框
+ */
++ (void)globalTipsVC:(UIViewController *_Nullable)vc tips:(NSString *)tips;
 
 @end
 

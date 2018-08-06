@@ -12,6 +12,8 @@
 UIKIT_EXTERN NSString *const kNetWorkServiceAddress;
 /** appKey存储关键字 */
 UIKIT_EXTERN NSString *const XLLIdentifyAppKey;
+/** 登录任务队列标识 */
+UIKIT_EXTERN char *const XLLLoginQueue;
 
 @interface GlobalConst : NSObject
 

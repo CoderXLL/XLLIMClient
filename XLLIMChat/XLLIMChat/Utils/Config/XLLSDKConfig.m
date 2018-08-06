@@ -29,6 +29,7 @@
     EMOptions *options = [EMOptions optionsWithAppkey:appKey];
     options.apnsCertName = apnsCertName;
     options.isAutoLogin = YES;
+    options.enableConsoleLog = YES;
     [[EMClient sharedClient] initializeSDKWithOptions:options];
 }
 

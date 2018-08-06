@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     XLLTextConfig *fieldConfig = [[XLLTextConfig alloc] init];
-    fieldConfig.maxLimitCount = 11;
+    fieldConfig.maxLimitCount = 20;
     fieldConfig.leftMargin = 0.0;
     self.accountField.fieldConfig = fieldConfig;
     self.accountField.delegate = self;
@@ -52,23 +52,20 @@
 {
     if ([object isEqual:self.accountField] && [keyPath isEqualToString:@"isGetMaxLimit"])
     {
-        self.isFinishAccount = self.accountField.isGetMaxLimit;
-        self.loginButton.enabled = self.accountField.isGetMaxLimit && !IsEmptyValue(self.passwordField.text);
+//        self.isFinishAccount = self.accountField.isGetMaxLimit;
+        self.isFinishAccount = !IsEmptyValue(self.accountField.text);
+        self.loginButton.enabled = !IsEmptyValue(self.accountField.text) && !IsEmptyValue(self.passwordField.text);
     }
 }
 
 - (IBAction)loginBtnClick:(id)sender {
     
-//    CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
-//    EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountField.text password:self.passwordField.text];
-//    CFAbsoluteTime endTime = CFAbsoluteTimeGetCurrent();
-//    XLLLog(@"%lf秒", endTime - startTime);
-//    if (!error) {
-    
-        XLLTabBarController *tabBarVC = [[XLLTabBarController alloc] init];
-        [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
-//        return;
-//    }
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
+    EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountField.text password:self.passwordField.text];
+    if (!error)
+    {
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[XLLTabBarController alloc] init];
+    }
 }
 
 - (IBAction)registerBtnClick:(id)sender {
