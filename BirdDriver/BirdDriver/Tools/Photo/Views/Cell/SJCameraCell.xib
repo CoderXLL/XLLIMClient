@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SJCameraCell">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_camera" translatesAutoresizingMaskIntoConstraints="NO" id="in2-gu-h3Y">
+                        <rect key="frame" x="37.5" y="31.5" width="35" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Oag-da-3x2"/>
+                            <constraint firstAttribute="width" constant="35" id="S97-Wb-7nN"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.21568627450980393" green="0.25490196078431371" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="in2-gu-h3Y" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="YNz-MN-zr3"/>
+                <constraint firstItem="in2-gu-h3Y" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lX1-9h-Dxb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="110" height="95"/>
+            <point key="canvasLocation" x="-43" y="-58"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo_camera" width="35" height="31"/>
+    </resources>
+</document>

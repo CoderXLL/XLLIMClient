@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SJSelectLabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="293"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="293"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxH-3Y-hQv">
+                        <rect key="frame" x="5" y="10" width="250" height="278"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_picture" translatesAutoresizingMaskIntoConstraints="NO" id="eso-Nj-qyK">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="218"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青丝海岸" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-r0-0dA">
+                                <rect key="frame" x="5" y="228" width="240" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrF-9F-HJh" customClass="SJPostsCenterButton">
+                                <rect key="frame" x="10" y="250" width="230" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wOD-Ru-qbY"/>
+                                </constraints>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eso-Nj-qyK" secondAttribute="bottom" constant="60" id="2Wb-Ys-2eE"/>
+                            <constraint firstAttribute="trailing" secondItem="GOk-r0-0dA" secondAttribute="trailing" constant="5" id="2z4-d1-BBx"/>
+                            <constraint firstItem="GOk-r0-0dA" firstAttribute="leading" secondItem="VxH-3Y-hQv" secondAttribute="leading" constant="5" id="7iP-eh-ICM"/>
+                            <constraint firstAttribute="bottom" secondItem="zrF-9F-HJh" secondAttribute="bottom" constant="8" id="CdF-Fv-1pt"/>
+                            <constraint firstItem="GOk-r0-0dA" firstAttribute="centerX" secondItem="VxH-3Y-hQv" secondAttribute="centerX" id="FUf-hU-Eia"/>
+                            <constraint firstAttribute="trailing" secondItem="eso-Nj-qyK" secondAttribute="trailing" id="Fid-XN-bA9"/>
+                            <constraint firstItem="eso-Nj-qyK" firstAttribute="leading" secondItem="VxH-3Y-hQv" secondAttribute="leading" id="FnI-tl-Drq"/>
+                            <constraint firstItem="zrF-9F-HJh" firstAttribute="leading" secondItem="VxH-3Y-hQv" secondAttribute="leading" constant="10" id="HS7-oj-rQ4"/>
+                            <constraint firstItem="eso-Nj-qyK" firstAttribute="top" secondItem="VxH-3Y-hQv" secondAttribute="top" id="VPC-ai-4GC"/>
+                            <constraint firstAttribute="trailing" secondItem="zrF-9F-HJh" secondAttribute="trailing" constant="10" id="WKE-oa-Nai"/>
+                            <constraint firstItem="GOk-r0-0dA" firstAttribute="top" secondItem="eso-Nj-qyK" secondAttribute="bottom" constant="10" id="msI-LB-DvX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_icon_select" translatesAutoresizingMaskIntoConstraints="NO" id="INm-yd-RbX">
+                        <rect key="frame" x="8" y="5" width="42" height="19"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="INm-yd-RbX" firstAttribute="top" secondItem="VxH-3Y-hQv" secondAttribute="top" constant="-5" id="8wT-Hm-0lo"/>
+                <constraint firstAttribute="bottom" secondItem="VxH-3Y-hQv" secondAttribute="bottom" constant="5" id="RPT-zd-J9u"/>
+                <constraint firstItem="VxH-3Y-hQv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="UuD-d3-avL"/>
+                <constraint firstItem="VxH-3Y-hQv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Vb2-fF-DT7"/>
+                <constraint firstItem="INm-yd-RbX" firstAttribute="leading" secondItem="VxH-3Y-hQv" secondAttribute="leading" constant="3" id="e1g-hf-N7b"/>
+                <constraint firstAttribute="trailing" secondItem="VxH-3Y-hQv" secondAttribute="trailing" constant="5" id="tel-9S-YGw"/>
+            </constraints>
+            <size key="customSize" width="260" height="293"/>
+            <connections>
+                <outlet property="bgView" destination="VxH-3Y-hQv" id="OLY-BQ-gnm"/>
+                <outlet property="infoBtn" destination="zrF-9F-HJh" id="AuL-LK-I2i"/>
+                <outlet property="nameLabel" destination="GOk-r0-0dA" id="jFX-Pc-9z3"/>
+                <outlet property="pictureImageView" destination="eso-Nj-qyK" id="lI4-7o-I7U"/>
+                <outlet property="selectImage" destination="INm-yd-RbX" id="2br-kx-wLb"/>
+            </connections>
+            <point key="canvasLocation" x="-174" y="-69.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default_picture" width="155" height="115"/>
+        <image name="image_icon_select" width="42" height="19"/>
+    </resources>
+</document>

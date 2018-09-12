@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="376" id="KGk-i7-Jjw" customClass="SJSystemMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="376"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="375.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secretary_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gOC-x2-ZTQ">
+                        <rect key="frame" x="16" y="16" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="WzU-o2-gsD"/>
+                            <constraint firstAttribute="height" constant="30" id="tnL-Gk-exD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeLine_bg" translatesAutoresizingMaskIntoConstraints="NO" id="soP-cr-jQV">
+                        <rect key="frame" x="51" y="26" width="411" height="349.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小秘书" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34O-08-z2f">
+                        <rect key="frame" x="77" y="44" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 08月15日 4:48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4A-H3-NVT">
+                        <rect key="frame" x="77" y="71" width="106" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鸟斯基小秘书恭喜您成功通过达人认证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4p-0a-Omy">
+                        <rect key="frame" x="77" y="94.5" width="363" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08V-yR-6En">
+                        <rect key="frame" x="77" y="123" width="363" height="43"/>
+                        <string key="text">亲爱的各路阿卡丽，恭喜您成功的通过了鸟斯基达人认证，
+现在您可以去发布路线了哦。亲爱的各路阿卡丽，恭喜您
+成功的通过了鸟斯基达人认证，现在您可以去发布路线了
+哦。亲爱的各路阿卡丽，恭喜您成功的通过了鸟斯基达人
+认证，现在您可以去发布路线了哦。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UBv-u1-rCH">
+                        <rect key="frame" x="77" y="181" width="363" height="152"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UBv-u1-rCH" secondAttribute="height" multiplier="263:110" id="XQ7-e0-KtC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="soP-cr-jQV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="6hG-W8-I6K"/>
+                    <constraint firstItem="08V-yR-6En" firstAttribute="top" secondItem="h4p-0a-Omy" secondAttribute="bottom" constant="14" id="7O6-qV-Y1u"/>
+                    <constraint firstItem="h4p-0a-Omy" firstAttribute="leading" secondItem="34O-08-z2f" secondAttribute="leading" id="7b0-ZL-nk0"/>
+                    <constraint firstAttribute="trailing" secondItem="soP-cr-jQV" secondAttribute="trailing" constant="10" id="87s-CM-GwQ"/>
+                    <constraint firstItem="soP-cr-jQV" firstAttribute="leading" secondItem="gOC-x2-ZTQ" secondAttribute="trailing" constant="5" id="9gy-cQ-cPb"/>
+                    <constraint firstItem="UBv-u1-rCH" firstAttribute="top" secondItem="08V-yR-6En" secondAttribute="bottom" constant="15" id="NDY-6U-QO7"/>
+                    <constraint firstItem="08V-yR-6En" firstAttribute="trailing" secondItem="soP-cr-jQV" secondAttribute="trailing" constant="-22" id="OOR-UC-6DF"/>
+                    <constraint firstItem="UBv-u1-rCH" firstAttribute="leading" secondItem="34O-08-z2f" secondAttribute="leading" id="QW5-pB-C3M"/>
+                    <constraint firstItem="w4A-H3-NVT" firstAttribute="leading" secondItem="34O-08-z2f" secondAttribute="leading" id="cwp-0G-5QO"/>
+                    <constraint firstItem="08V-yR-6En" firstAttribute="leading" secondItem="34O-08-z2f" secondAttribute="leading" id="fEu-y5-QfD"/>
+                    <constraint firstItem="h4p-0a-Omy" firstAttribute="trailing" secondItem="08V-yR-6En" secondAttribute="trailing" id="fSi-8A-lGs"/>
+                    <constraint firstAttribute="bottom" secondItem="soP-cr-jQV" secondAttribute="bottom" id="lap-0c-VZe"/>
+                    <constraint firstItem="UBv-u1-rCH" firstAttribute="trailing" secondItem="08V-yR-6En" secondAttribute="trailing" id="mtx-Pg-Z9W"/>
+                    <constraint firstItem="gOC-x2-ZTQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tuA-IS-u6N"/>
+                    <constraint firstItem="h4p-0a-Omy" firstAttribute="top" secondItem="w4A-H3-NVT" secondAttribute="bottom" constant="10" id="y5i-Bz-Evs"/>
+                    <constraint firstItem="34O-08-z2f" firstAttribute="leading" secondItem="gOC-x2-ZTQ" secondAttribute="trailing" constant="31" id="ybC-s9-jVR"/>
+                    <constraint firstItem="w4A-H3-NVT" firstAttribute="top" secondItem="34O-08-z2f" secondAttribute="bottom" constant="10" id="ysd-5x-8Kz"/>
+                    <constraint firstItem="34O-08-z2f" firstAttribute="top" secondItem="soP-cr-jQV" secondAttribute="top" constant="18" id="zA2-kt-lQc"/>
+                    <constraint firstItem="gOC-x2-ZTQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="zpG-Rn-f36"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageContent" destination="08V-yR-6En" id="y8F-2V-uvw"/>
+                <outlet property="messagePicture" destination="UBv-u1-rCH" id="0iX-yL-8wn"/>
+                <outlet property="messageTitle" destination="h4p-0a-Omy" id="XKv-IU-jJY"/>
+                <outlet property="nickName" destination="34O-08-z2f" id="PKm-UU-BYG"/>
+                <outlet property="porImageView" destination="gOC-x2-ZTQ" id="DdE-nQ-Ddj"/>
+                <outlet property="timeLabel" destination="w4A-H3-NVT" id="hWr-sn-ca3"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="secretary_icon" width="30" height="30"/>
+        <image name="timeLine_bg" width="316" height="139"/>
+    </resources>
+</document>

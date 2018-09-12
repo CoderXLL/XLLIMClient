@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SJNoviceGuideStep1Controller">
+            <connections>
+                <outlet property="nextBtn" destination="isq-VZ-P4n" id="Nt2-5I-5tf"/>
+                <outlet property="tf_nickName" destination="9MW-Uh-zfM" id="Iwa-QP-Wc8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isq-VZ-P4n" customClass="SJGradientButton">
+                    <rect key="frame" x="74.5" y="219" width="225" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xVF-TI-ERS"/>
+                    </constraints>
+                    <state key="normal" title="下一步"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="dKn-oO-pdn"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="novice_name_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5TK-u5-kP4">
+                    <rect key="frame" x="50" y="104" width="14" height="15"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="不超过24个字符(12个汉字)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MW-Uh-zfM">
+                    <rect key="frame" x="50" y="134" width="275" height="45"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="KEc-it-4qi"/>
+                    </constraints>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="QIj-0d-5hl"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-l6-4ln">
+                    <rect key="frame" x="72" y="99.5" width="34" height="24"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="isq-VZ-P4n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kd-y1-XMX"/>
+                <constraint firstItem="isq-VZ-P4n" firstAttribute="top" secondItem="9MW-Uh-zfM" secondAttribute="bottom" constant="40" id="7fE-sF-UCQ"/>
+                <constraint firstItem="isq-VZ-P4n" firstAttribute="width" secondItem="Q5M-cg-NOt" secondAttribute="width" multiplier="0.6" id="ETt-uc-7xk"/>
+                <constraint firstItem="dlD-l6-4ln" firstAttribute="leading" secondItem="5TK-u5-kP4" secondAttribute="trailing" constant="8" id="RLH-0Q-oq8"/>
+                <constraint firstItem="5TK-u5-kP4" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="ZH6-0S-IKf"/>
+                <constraint firstItem="dlD-l6-4ln" firstAttribute="centerY" secondItem="5TK-u5-kP4" secondAttribute="centerY" id="ZPj-7p-VHH"/>
+                <constraint firstItem="5TK-u5-kP4" firstAttribute="leading" secondItem="9MW-Uh-zfM" secondAttribute="leading" id="ZRu-8Q-6bi"/>
+                <constraint firstItem="5TK-u5-kP4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="dDm-jB-ZfO"/>
+                <constraint firstItem="9MW-Uh-zfM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="i0B-9g-exJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9MW-Uh-zfM" secondAttribute="trailing" constant="50" id="o3n-Qr-HYk"/>
+                <constraint firstItem="9MW-Uh-zfM" firstAttribute="top" secondItem="5TK-u5-kP4" secondAttribute="bottom" constant="15" id="wvz-mc-jUq"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="novice_name_icon" width="14" height="15"/>
+    </resources>
+</document>

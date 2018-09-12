@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hGt-Rw-jMO" customClass="SJActivityCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hGt-Rw-jMO" id="oAW-2c-UtZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s6-lk-RS6">
+                        <rect key="frame" x="15" y="13.5" width="65" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="fXb-Mj-6gy"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="* ">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="标签">
+                                <attributes>
+                                    <color key="NSColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzF-p8-xO9">
+                        <rect key="frame" x="240" y="4.5" width="60" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Vip-Ip-vCq"/>
+                            <constraint firstAttribute="height" constant="35" id="vJk-HQ-JxG"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="arrow_down"/>
+                        <connections>
+                            <action selector="expandBtnClick:" destination="hGt-Rw-jMO" eventType="touchUpInside" id="hWX-S0-iU5"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-DW-sNk">
+                        <rect key="frame" x="90" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="oGI-Tc-e1w"/>
+                            <constraint firstAttribute="width" constant="20" id="w5F-Px-XeO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.2156862745" green="0.25490196079999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.43345811631944442" green="0.3671875" blue="0.3686252170138889" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-O5-3l6">
+                        <rect key="frame" x="15" y="42.5" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AMq-u3-bCd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ceC-DW-sNk" firstAttribute="centerY" secondItem="4s6-lk-RS6" secondAttribute="centerY" id="1d4-Kg-Bgz"/>
+                    <constraint firstItem="ruu-O5-3l6" firstAttribute="leading" secondItem="oAW-2c-UtZ" secondAttribute="leading" constant="15" id="40b-hM-yi0"/>
+                    <constraint firstItem="4s6-lk-RS6" firstAttribute="centerY" secondItem="oAW-2c-UtZ" secondAttribute="centerY" id="Cxs-Rj-N1U"/>
+                    <constraint firstItem="ceC-DW-sNk" firstAttribute="leading" secondItem="4s6-lk-RS6" secondAttribute="trailing" constant="10" id="JjN-ua-jEW"/>
+                    <constraint firstAttribute="trailing" secondItem="ruu-O5-3l6" secondAttribute="trailing" constant="15" id="NA6-IC-LR4"/>
+                    <constraint firstItem="BzF-p8-xO9" firstAttribute="centerY" secondItem="oAW-2c-UtZ" secondAttribute="centerY" id="Sh1-B9-2O4"/>
+                    <constraint firstAttribute="bottom" secondItem="ruu-O5-3l6" secondAttribute="bottom" id="Xky-vB-Htb"/>
+                    <constraint firstAttribute="trailing" secondItem="BzF-p8-xO9" secondAttribute="trailing" constant="20" id="aSD-bm-6xS"/>
+                    <constraint firstItem="4s6-lk-RS6" firstAttribute="leading" secondItem="oAW-2c-UtZ" secondAttribute="leading" constant="15" id="wiK-EX-MUG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="rK8-lt-WWa"/>
+            <connections>
+                <outlet property="arrowBtn" destination="BzF-p8-xO9" id="04X-Ca-HG9"/>
+                <outlet property="tagLabel" destination="ceC-DW-sNk" id="wL9-Mx-dBe"/>
+                <outlet property="tagLabelWidthCon" destination="w5F-Px-XeO" id="i8V-Wc-Hq7"/>
+            </connections>
+            <point key="canvasLocation" x="-823" y="-149"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_down" width="16" height="16"/>
+    </resources>
+</document>

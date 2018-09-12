@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MJt-gi-d39" customClass="SJRouteBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecI-q1-P8A" customClass="SJLineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TCk-eJ-0xW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0K-Pt-U1Q">
+                    <rect key="frame" x="20" y="20.5" width="27" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="E6Y-4m-eBa"/>
+                        <constraint firstAttribute="height" constant="22" id="STY-HT-bXR"/>
+                    </constraints>
+                    <state key="normal" image="routeDetail_like_nor"/>
+                    <state key="selected" image="routeDetail_like_sel"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjK-ln-TFq">
+                    <rect key="frame" x="93" y="20.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="7Uz-Lh-dsn"/>
+                        <constraint firstAttribute="height" constant="22" id="Wzi-Fj-fp3"/>
+                    </constraints>
+                    <state key="normal" image="routeDetail_phone"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQE-16-raO">
+                    <rect key="frame" x="155" y="1" width="220" height="62"/>
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="6CX-Lg-zuQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="100元 发起拼团">
+                        <color key="titleColor" red="1" green="0.73333333333333328" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ecI-q1-P8A" firstAttribute="top" secondItem="uNb-z2-fgE" secondAttribute="top" id="BFt-5T-XOB"/>
+                <constraint firstItem="u0K-Pt-U1Q" firstAttribute="centerY" secondItem="MJt-gi-d39" secondAttribute="centerY" id="NV8-9j-wme"/>
+                <constraint firstItem="QQE-16-raO" firstAttribute="top" secondItem="ecI-q1-P8A" secondAttribute="bottom" id="dbd-jc-pZj"/>
+                <constraint firstItem="u0K-Pt-U1Q" firstAttribute="leading" secondItem="uNb-z2-fgE" secondAttribute="leading" constant="20" id="hiZ-HJ-Unn"/>
+                <constraint firstItem="uNb-z2-fgE" firstAttribute="trailing" secondItem="ecI-q1-P8A" secondAttribute="trailing" id="jCN-HU-GWw"/>
+                <constraint firstItem="ecI-q1-P8A" firstAttribute="leading" secondItem="uNb-z2-fgE" secondAttribute="leading" id="jPc-pB-TL0"/>
+                <constraint firstItem="GjK-ln-TFq" firstAttribute="centerY" secondItem="u0K-Pt-U1Q" secondAttribute="centerY" id="k9h-ro-c3w"/>
+                <constraint firstItem="GjK-ln-TFq" firstAttribute="leading" secondItem="u0K-Pt-U1Q" secondAttribute="trailing" constant="46" id="kv5-Ec-Iq7"/>
+                <constraint firstItem="uNb-z2-fgE" firstAttribute="trailing" secondItem="QQE-16-raO" secondAttribute="trailing" id="oZm-Ss-KMA"/>
+                <constraint firstItem="uNb-z2-fgE" firstAttribute="bottom" secondItem="QQE-16-raO" secondAttribute="bottom" id="ueC-uf-OYc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="uNb-z2-fgE"/>
+            <point key="canvasLocation" x="-7.5" y="-240.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="routeDetail_like_nor" width="27" height="22"/>
+        <image name="routeDetail_like_sel" width="27" height="22"/>
+        <image name="routeDetail_phone" width="22" height="21"/>
+    </resources>
+</document>

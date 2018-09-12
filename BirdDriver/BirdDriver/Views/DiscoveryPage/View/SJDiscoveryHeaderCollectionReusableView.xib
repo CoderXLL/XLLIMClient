@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SJDiscoveryHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_picture" translatesAutoresizingMaskIntoConstraints="NO" id="fmy-YM-mFu">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="151"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WDV-Fx-IdC">
+                    <rect key="frame" x="300" y="82" width="54" height="54"/>
+                    <color key="backgroundColor" red="0.44705882352941173" green="0.51372549019607838" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="IDt-v7-IIf"/>
+                        <constraint firstAttribute="height" constant="54" id="k32-c3-jRO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <string key="title">发起
+活动</string>
+                        <color key="titleColor" red="1" green="0.73333333333333328" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="27"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是描述" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO1-LD-Kg0">
+                    <rect key="frame" x="121" y="44" width="137" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WDV-Fx-IdC" secondAttribute="trailing" constant="25" id="7Wg-H6-Lgg"/>
+                <constraint firstAttribute="trailing" secondItem="fmy-YM-mFu" secondAttribute="trailing" id="FDs-Pv-6HL"/>
+                <constraint firstItem="QO1-LD-Kg0" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" constant="-15" id="JYt-aF-1qC"/>
+                <constraint firstAttribute="bottom" secondItem="WDV-Fx-IdC" secondAttribute="bottom" constant="15" id="OcP-L2-VTg"/>
+                <constraint firstItem="fmy-YM-mFu" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ccR-kZ-irJ"/>
+                <constraint firstAttribute="bottom" secondItem="fmy-YM-mFu" secondAttribute="bottom" id="qhQ-ac-wRu"/>
+                <constraint firstItem="QO1-LD-Kg0" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="skm-cn-LMB"/>
+                <constraint firstItem="fmy-YM-mFu" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="teC-Kh-eXr"/>
+            </constraints>
+            <connections>
+                <outlet property="activitiesBtn" destination="WDV-Fx-IdC" id="PYt-2z-RH6"/>
+                <outlet property="bannerImageView" destination="fmy-YM-mFu" id="6iR-3U-CjN"/>
+                <outlet property="descLabel" destination="QO1-LD-Kg0" id="8tB-3v-Qa5"/>
+            </connections>
+            <point key="canvasLocation" x="-341" y="-100"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="default_picture" width="155" height="115"/>
+    </resources>
+</document>

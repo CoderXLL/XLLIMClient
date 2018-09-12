@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="508" id="KGk-i7-Jjw" customClass="SJNoteParagraphCell">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="538"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="549" height="537.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpN-G1-UEr">
+                        <rect key="frame" x="15" y="290.5" width="519" height="236.5"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <state key="normal" image="note_camera_icon"/>
+                        <connections>
+                            <action selector="actionAddPhoto:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jJz-Uj-oFg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAM-nY-H58">
+                        <rect key="frame" x="496" y="298.5" width="30" height="33"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="15"/>
+                        <state key="normal" title="X">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <connections>
+                            <action selector="actionDelPhoto:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WJ2-fZ-ANg"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDL-hd-uaz">
+                        <rect key="frame" x="15" y="31" width="519" height="259.5"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XDL-hd-uaz" secondAttribute="height" multiplier="2:1" id="mOc-2k-Ori"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                <color key="value" red="0.95294117649999999" green="0.39607843139999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="_placeholderLabel.text" value="添加正文"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="B9x-RO-iwK"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                <constraints>
+                    <constraint firstItem="EAM-nY-H58" firstAttribute="trailing" secondItem="WpN-G1-UEr" secondAttribute="trailing" constant="-8" id="LPL-ok-vwt"/>
+                    <constraint firstAttribute="trailing" secondItem="XDL-hd-uaz" secondAttribute="trailing" constant="15" id="P78-Ey-olU"/>
+                    <constraint firstItem="WpN-G1-UEr" firstAttribute="leading" secondItem="XDL-hd-uaz" secondAttribute="leading" id="POs-0p-KIr"/>
+                    <constraint firstItem="WpN-G1-UEr" firstAttribute="top" secondItem="XDL-hd-uaz" secondAttribute="bottom" id="YBo-VJ-wn1"/>
+                    <constraint firstItem="EAM-nY-H58" firstAttribute="top" secondItem="WpN-G1-UEr" secondAttribute="top" constant="8" id="bA0-ve-Bpk"/>
+                    <constraint firstItem="XDL-hd-uaz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="eKk-Vz-IB7"/>
+                    <constraint firstItem="WpN-G1-UEr" firstAttribute="trailing" secondItem="XDL-hd-uaz" secondAttribute="trailing" id="kLv-2H-O9e"/>
+                    <constraint firstItem="WpN-G1-UEr" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="nN7-ip-WJf"/>
+                    <constraint firstItem="XDL-hd-uaz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xA7-2T-G3A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn_delImage" destination="EAM-nY-H58" id="Sbn-ZT-khu"/>
+                <outlet property="btn_selectImage" destination="WpN-G1-UEr" id="epd-g0-jUf"/>
+                <outlet property="tv_des" destination="XDL-hd-uaz" id="asa-iS-CCn"/>
+            </connections>
+            <point key="canvasLocation" x="-123.5" y="-116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="note_camera_icon" width="345" height="80"/>
+    </resources>
+</document>

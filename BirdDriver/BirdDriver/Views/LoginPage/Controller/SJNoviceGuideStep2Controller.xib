@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SJNoviceGuideStep2Controller">
+            <connections>
+                <outlet property="btn_female" destination="bde-Il-NvY" id="tiU-fM-mPF"/>
+                <outlet property="btn_male" destination="399-Vg-52M" id="l8i-Sh-sYQ"/>
+                <outlet property="nextBtn" destination="RmX-NP-RzE" id="cuI-wS-Ukb"/>
+                <outlet property="tf_brief" destination="5vL-mO-1X0" id="Wlo-FJ-0he"/>
+                <outlet property="tf_day" destination="44l-MN-4rW" id="9CZ-aA-g7a"/>
+                <outlet property="tf_month" destination="9qN-Po-el6" id="vqP-TO-ohG"/>
+                <outlet property="tf_year" destination="OKN-Cl-9z6" id="Czq-G5-0PF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-NP-RzE" customClass="SJGradientButton">
+                    <rect key="frame" x="75" y="405" width="225" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mqZ-O4-RPC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleStr" value="下一步"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="0oh-yh-Ub5"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="novice_sex_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-Uy-VrS">
+                    <rect key="frame" x="50" y="104" width="14" height="12"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="novice_birthday_icon" translatesAutoresizingMaskIntoConstraints="NO" id="A4l-9p-vto">
+                    <rect key="frame" x="50" y="196" width="14" height="10"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="一句话介绍自己吧" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-mO-1X0">
+                    <rect key="frame" x="50" y="320" width="275" height="45"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="t9M-Sb-GoC"/>
+                    </constraints>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="PZY-u6-Pr8"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lh-kU-cnG">
+                    <rect key="frame" x="72" y="98" width="34" height="24"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFG-ZN-1M8">
+                    <rect key="frame" x="72" y="189.5" width="34" height="24"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个性签名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-fq-QwA">
+                    <rect key="frame" x="72" y="281.5" width="68" height="24"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="399-Vg-52M">
+                    <rect key="frame" x="124" y="136" width="50" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <state key="normal" title="  男  " image="novice_pitch_nor">
+                        <color key="titleColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="novice_pitch_sel"/>
+                    <connections>
+                        <action selector="chooseSexAction:" destination="-1" eventType="touchUpInside" id="GSM-Xa-gyo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bde-Il-NvY">
+                    <rect key="frame" x="50" y="136" width="50" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <state key="normal" title="  女  " image="novice_pitch_nor">
+                        <color key="titleColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="novice_pitch_sel"/>
+                    <connections>
+                        <action selector="chooseSexAction:" destination="-1" eventType="touchUpInside" id="t8j-DY-xzc"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="novice_pen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-ef-TJr">
+                    <rect key="frame" x="50" y="286" width="14" height="14"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1970" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="OKN-Cl-9z6">
+                    <rect key="frame" x="50" y="226" width="57" height="20"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="00I-60-JiC"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="9qN-Po-el6">
+                    <rect key="frame" x="145" y="226" width="57" height="20"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FZM-Ip-kvy"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="44l-MN-4rW">
+                    <rect key="frame" x="240" y="226" width="57" height="20"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xqO-pn-B4U"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpw-eW-iIk">
+                    <rect key="frame" x="117" y="225.5" width="18" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2R-To-XIN">
+                    <rect key="frame" x="212" y="225.5" width="18" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5D-gC-BgA">
+                    <rect key="frame" x="307" y="225.5" width="18" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="44l-MN-4rW" firstAttribute="width" secondItem="OKN-Cl-9z6" secondAttribute="width" id="5bn-VT-IHi"/>
+                <constraint firstItem="44l-MN-4rW" firstAttribute="leading" secondItem="z2R-To-XIN" secondAttribute="trailing" constant="10" id="6He-ha-kDw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5vL-mO-1X0" secondAttribute="trailing" constant="50" id="6jE-Yw-UXD"/>
+                <constraint firstItem="A4l-9p-vto" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="leading" id="7Xi-7P-vW4"/>
+                <constraint firstItem="RmX-NP-RzE" firstAttribute="width" secondItem="Q5M-cg-NOt" secondAttribute="width" multiplier="0.6" id="8dV-v7-EZZ"/>
+                <constraint firstItem="cdX-Uy-VrS" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="A1C-Za-Rk4"/>
+                <constraint firstItem="6lh-kU-cnG" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="trailing" constant="8" id="ASy-BX-5EF"/>
+                <constraint firstItem="BtH-fq-QwA" firstAttribute="centerY" secondItem="pUS-ef-TJr" secondAttribute="centerY" id="CeP-PG-tj5"/>
+                <constraint firstItem="z2R-To-XIN" firstAttribute="leading" secondItem="9qN-Po-el6" secondAttribute="trailing" constant="10" id="Cyl-9R-zcA"/>
+                <constraint firstItem="5vL-mO-1X0" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="leading" id="DOR-4e-LDi"/>
+                <constraint firstItem="6lh-kU-cnG" firstAttribute="centerY" secondItem="cdX-Uy-VrS" secondAttribute="centerY" id="DWL-SV-7h9"/>
+                <constraint firstItem="z2R-To-XIN" firstAttribute="centerY" secondItem="9qN-Po-el6" secondAttribute="centerY" id="DXv-Yr-iXl"/>
+                <constraint firstItem="F5D-gC-BgA" firstAttribute="centerY" secondItem="44l-MN-4rW" secondAttribute="centerY" id="DuC-El-DTD"/>
+                <constraint firstItem="9qN-Po-el6" firstAttribute="width" secondItem="OKN-Cl-9z6" secondAttribute="width" id="EZQ-TD-S3N"/>
+                <constraint firstItem="OKN-Cl-9z6" firstAttribute="top" secondItem="A4l-9p-vto" secondAttribute="bottom" constant="20" id="GVE-h8-chF"/>
+                <constraint firstItem="kpw-eW-iIk" firstAttribute="centerY" secondItem="OKN-Cl-9z6" secondAttribute="centerY" id="Gbq-1a-kU2"/>
+                <constraint firstItem="bde-Il-NvY" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="leading" id="GuE-wP-WG6"/>
+                <constraint firstItem="QFG-ZN-1M8" firstAttribute="centerY" secondItem="A4l-9p-vto" secondAttribute="centerY" id="HP5-pu-rhN"/>
+                <constraint firstItem="RmX-NP-RzE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LWn-wU-w0p"/>
+                <constraint firstItem="9qN-Po-el6" firstAttribute="top" secondItem="OKN-Cl-9z6" secondAttribute="top" id="Lbi-h3-bTM"/>
+                <constraint firstItem="pUS-ef-TJr" firstAttribute="top" secondItem="OKN-Cl-9z6" secondAttribute="bottom" constant="40" id="Mll-ZK-0HE"/>
+                <constraint firstItem="bde-Il-NvY" firstAttribute="top" secondItem="cdX-Uy-VrS" secondAttribute="bottom" constant="20" id="Q6t-bD-hP1"/>
+                <constraint firstItem="44l-MN-4rW" firstAttribute="height" secondItem="OKN-Cl-9z6" secondAttribute="height" id="ZYp-4j-f5h"/>
+                <constraint firstItem="399-Vg-52M" firstAttribute="top" secondItem="bde-Il-NvY" secondAttribute="top" id="ayo-iS-cIm"/>
+                <constraint firstItem="QFG-ZN-1M8" firstAttribute="leading" secondItem="A4l-9p-vto" secondAttribute="trailing" constant="8" id="bdm-5Y-nTW"/>
+                <constraint firstItem="F5D-gC-BgA" firstAttribute="trailing" secondItem="5vL-mO-1X0" secondAttribute="trailing" id="e5l-LM-WsU"/>
+                <constraint firstItem="9qN-Po-el6" firstAttribute="height" secondItem="OKN-Cl-9z6" secondAttribute="height" id="eSm-yC-ztx"/>
+                <constraint firstItem="399-Vg-52M" firstAttribute="leading" secondItem="bde-Il-NvY" secondAttribute="trailing" constant="24" id="gZp-oY-gCC"/>
+                <constraint firstItem="5vL-mO-1X0" firstAttribute="top" secondItem="pUS-ef-TJr" secondAttribute="bottom" constant="20" id="hmP-L3-aHx"/>
+                <constraint firstItem="399-Vg-52M" firstAttribute="height" secondItem="bde-Il-NvY" secondAttribute="height" id="ifh-39-hEg"/>
+                <constraint firstItem="F5D-gC-BgA" firstAttribute="leading" secondItem="44l-MN-4rW" secondAttribute="trailing" constant="10" id="lX9-5t-JQM"/>
+                <constraint firstItem="cdX-Uy-VrS" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="mMg-lG-A1q"/>
+                <constraint firstItem="44l-MN-4rW" firstAttribute="top" secondItem="OKN-Cl-9z6" secondAttribute="top" id="oLK-Lt-m8J"/>
+                <constraint firstItem="399-Vg-52M" firstAttribute="width" secondItem="bde-Il-NvY" secondAttribute="width" id="ofx-J0-e1q"/>
+                <constraint firstItem="RmX-NP-RzE" firstAttribute="top" secondItem="5vL-mO-1X0" secondAttribute="bottom" constant="40" id="oxO-KL-yXV"/>
+                <constraint firstItem="pUS-ef-TJr" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="leading" id="t9B-dd-P4B"/>
+                <constraint firstItem="9qN-Po-el6" firstAttribute="leading" secondItem="kpw-eW-iIk" secondAttribute="trailing" constant="10" id="tXD-Zt-fea"/>
+                <constraint firstItem="A4l-9p-vto" firstAttribute="top" secondItem="bde-Il-NvY" secondAttribute="bottom" constant="40" id="ufH-a3-jeI"/>
+                <constraint firstItem="kpw-eW-iIk" firstAttribute="leading" secondItem="OKN-Cl-9z6" secondAttribute="trailing" constant="10" id="w8n-ov-D0g"/>
+                <constraint firstItem="BtH-fq-QwA" firstAttribute="leading" secondItem="pUS-ef-TJr" secondAttribute="trailing" constant="8" id="wvX-n0-Wf9"/>
+                <constraint firstItem="OKN-Cl-9z6" firstAttribute="leading" secondItem="cdX-Uy-VrS" secondAttribute="leading" id="yUM-SH-mpR"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="60.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="novice_birthday_icon" width="14" height="10"/>
+        <image name="novice_pen_icon" width="14" height="14"/>
+        <image name="novice_pitch_nor" width="17" height="17"/>
+        <image name="novice_pitch_sel" width="17" height="17"/>
+        <image name="novice_sex_icon" width="14" height="12"/>
+    </resources>
+</document>

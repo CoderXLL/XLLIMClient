@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SJRouteHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-lk-8db" customClass="SJSuffingView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.41999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cm-wb-9yq">
+                    <rect key="frame" x="336" y="147" width="34" height="17"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="DDl-AU-ycg"/>
+                        <constraint firstAttribute="width" constant="34" id="DRE-Rh-HNP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TQH-lk-8db" secondAttribute="trailing" id="5zS-Jg-3Rh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8cm-wb-9yq" secondAttribute="bottom" constant="24" id="FPi-xd-QoQ"/>
+                <constraint firstItem="TQH-lk-8db" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j2s-Di-wZZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8cm-wb-9yq" secondAttribute="trailing" constant="5" id="nFu-8f-nFf"/>
+                <constraint firstItem="TQH-lk-8db" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nb7-kq-WmY"/>
+                <constraint firstItem="TQH-lk-8db" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="yyn-Bz-ePv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descLabel" destination="8cm-wb-9yq" id="c8Q-Ha-cWS"/>
+                <outlet property="suffingView" destination="TQH-lk-8db" id="G27-b2-Qnx"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="-189"/>
+        </view>
+    </objects>
+</document>
