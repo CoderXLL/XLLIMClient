@@ -62,7 +62,7 @@
     
     [[UIApplication sharedApplication].keyWindow endEditing:YES];
     EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountField.text password:self.passwordField.text];
-    if (!error)
+//    if (!error)
     {
         [UIApplication sharedApplication].keyWindow.rootViewController = [[XLLTabBarController alloc] init];
     }
