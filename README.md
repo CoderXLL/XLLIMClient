@@ -10,6 +10,7 @@
 > - RAC处理竖向多scrollView交互
 > - collectionView加载控制器view，并模拟重用机制横向滚动。
 
+
 ![小功能演示1](https://upload-images.jianshu.io/upload_images/5244645-0eb2351822c3472d.gif?imageMogr2/auto-orient/strip)
 
 **会话模块**涉及到的点包括：
